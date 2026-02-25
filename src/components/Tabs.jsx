@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setActiveTab } from "../redux/features/searchSlice";
 
 const Tabs = () => {
-  const tabs = ["photos", "videos", "GIF"];
+  const tabs = ["photos", "videos", "gif"];
 
   const dispatch = useDispatch();
 

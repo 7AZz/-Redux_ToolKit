@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
+import { setQuery } from "../redux/features/searchSlice";
 
 const SearchBar = () => {
   const [text, setText] = useState("");
@@ -16,7 +17,7 @@ const SearchBar = () => {
     <div>
       <form
         onSubmit={(e) => submitHandler(e)}
-        className="bg-gray-900 flex p-10 gap-5"
+        className="bg-gray-900 flex py-10 px-10 gap-5"
       >
         <input
           value={text}
